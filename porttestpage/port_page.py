@@ -24,7 +24,7 @@ class PortElement:
     }
     # 投标项目硬装新增接口请求
     hardbid_project_save_port = r'http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save'
-    # 投标项目硬装新增参数(是否中标由isBided判断：“yes”是中标、“no”是未中标  空是不填写是否中标)
+    # 投标项目硬装新增参数(是否中标由isBided判断：“yes”是中标、“no”是未中标  空是不填写是否中标  bsProDetailsList是合同详情字段)
     add_hardbid_project = {
         "bsType": "1280327614988423169",
         "proName": "新增硬装地产投标测试项目202204260001",
@@ -68,7 +68,7 @@ class PortElement:
 
     # 投标项目软装新增接口请求
     softbid_project_save_port = r'http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save'
-    # 投标项目软装新增参数  (是否中标由isBided判断：“yes”是中标、“no”是未中标  )
+    # 投标项目软装新增参数  (是否中标由isBided判断：“yes”是中标、“no”是未中标  bsProDetailsList是合同详情字段)
     add_softbid_project = {
         "bsType": "1280327614988423169",
         "proName": "20220517新增软装投标项目测试2",
