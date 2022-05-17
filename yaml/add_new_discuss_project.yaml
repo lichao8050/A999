@@ -1,0 +1,13 @@
+# 这是新增洽谈项目的测试数据
+#  value2中（ 1是软装，2是硬装 ） value3中（ 1是直委，2是投标 ）
+- username: heqiangming
+  password: abc123456
+  value1: 新增一个洽谈项目20220001
+  value2: 1
+  value3: 2
+- username: heqiangming
+  password: abc123456
+  value1: 新增一个洽谈项目2021111204
+  value2: 2
+  value3: 1
+

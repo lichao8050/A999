@@ -1,0 +1,5 @@
+# 这是用户登录测试数据
+- username: heqiangming
+  password: abc123456
+  b: '小铃铛有您待处理的事项，是否立即去处理？'
+  msg: '成功'
