@@ -5,7 +5,6 @@
 
 
 class PortElement:
-
     gw_port = r'http://39.108.184.75:9073/timeline?versionFlag=-1'
     # 登录接口
     login_url = r'http://kbs.matrixdesign.cn/api/pmtapi/base_Account/login?username=wuyue&password=abc123456'
@@ -23,10 +22,10 @@ class PortElement:
         "auditStatus": "1",
         "module": 1
     }
-    # 投标项目新增接口请求
-    bid_project_save_port = r'http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save'
-    # 投标项目新增参数
-    add_bid_project = {
+    # 投标项目硬装新增接口请求
+    hardbid_project_save_port = r'http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save'
+    # 投标项目硬装新增参数(是否中标由isBided判断：“yes”是中标、“no”是未中标  空是不填写是否中标)
+    add_hardbid_project = {
         "bsType": "1280327614988423169",
         "proName": "新增硬装地产投标测试项目202204260001",
         "proType": "1284015946851291137",
@@ -65,6 +64,64 @@ class PortElement:
         },
         "proStatus": "商务投标",
         "proStage": "1284035196542390273"
+    }
+
+    # 投标项目软装新增接口请求
+    softbid_project_save_port = r'http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save'
+    # 投标项目软装新增参数  (是否中标由isBided判断：“yes”是中标、“no”是未中标  )
+    add_softbid_project = {
+        "bsType": "1280327614988423169",
+        "proName": "20220517新增软装投标项目测试2",
+        "proType": "1284015946851291137",
+        "customerId": "1331078037374111745",
+        "signCompany": "上海奥慧妍健康科技有限公司",
+        "bidAmount": 0,
+        "proProvince": "450000",
+        "proCity": "450300",
+        "sybCategory": "softType",
+        "proAddress": "测试1",
+        "bsDirectorId": "16073917709738137",
+        "bsDirector": "郑鸿晖",
+        "bsManager": "钟小乐",
+        "bsManagerId": "15879510180034041",
+        "bsProgress": "1438764653026086913",
+        "planFinishDate": "2022-05-17 12:03:06",
+        "proStartDate": "2022-05-16 00:00:00",
+        "designDirection": "测试2",
+        "proSource": "1302935975869157378",
+        "isSingleList": "yes",
+        "isPleasedHard": "no",
+        "preference": "暂无",
+        "isArtNeeds": "测试3",
+        "isMineHard": "1326127662460178433",
+        "hardCompany": "矩阵纵横设计股份有限公司",
+        "matrixArea": "华南",
+        "adminArea": "华南地区",
+        "companyEntity": "1",
+        "isSupAgreement": "no",
+        "createBy": "何强明",
+        "createDate": "2022-05-17 12:01:45",
+        "proRegister": "15933960308972735",
+        "proRegisterTime": "2022-05-17 12:01:45",
+        "bsProTender": {
+            "commercialRate": 40,
+            "competeName": "测试6",
+            "competeProject": "测试4",
+            "marketPostion": "测试5",
+            "reportTime": "2022-05-20 00:00:00",
+            "returnTime": "2022-05-19 00:00:00",
+            "skillRate": 60,
+            "otherDesign": "测试7",
+            "wasCooperation": "no",
+            "cooperationRecord": "这是测试合作记录1",
+            "tenderStartTime": "2022-05-18 00:00:00",
+            "decision": "1331788921402691586",
+            "lowBiding": "yes",
+            "reportType": "1331787808251187201",
+            "isTech": "1395277357299929090"
+        },
+        "proStatus": "商务投标",
+        "proStage": "1284035278016745473"
     }
 
     # 执行项目新增接口请求

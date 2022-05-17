@@ -1290,3 +1290,17 @@ Wed, 11 May 2022 17:37:46-log-base_util.py-[line:25]-INFO-[日志信息]: 打开
 Wed, 11 May 2022 17:37:46-log-login_page.py-[line:15]-INFO-[日志信息]: 输入用户名
 Wed, 11 May 2022 17:37:47-log-login_page.py-[line:17]-INFO-[日志信息]: 输入登录密码
 Wed, 11 May 2022 17:37:47-log-login_page.py-[line:19]-INFO-[日志信息]: 点击登录按钮
+Tue, 17 May 2022 11:53:34-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Tue, 17 May 2022 11:53:34-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Tue, 17 May 2022 11:55:00-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Tue, 17 May 2022 11:55:00-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Tue, 17 May 2022 11:55:14-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Tue, 17 May 2022 11:55:14-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Tue, 17 May 2022 12:20:37-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Tue, 17 May 2022 12:20:37-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Tue, 17 May 2022 12:20:37-log-httpport.py-[line:33]-INFO-[日志信息]: 正在发送post请求，请求地址：http://kbs.matrixdesign.cn/api/pmtapi/base_Account/login?username=wuyue&password=abc123456， 请求参数None
+Tue, 17 May 2022 12:20:37-log-httpport.py-[line:33]-INFO-[日志信息]: 正在发送post请求，请求地址：http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save， 请求参数None
+Tue, 17 May 2022 12:26:28-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Tue, 17 May 2022 12:26:28-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Tue, 17 May 2022 12:26:28-log-httpport.py-[line:33]-INFO-[日志信息]: 正在发送post请求，请求地址：http://kbs.matrixdesign.cn/api/pmtapi/base_Account/login?username=wuyue&password=abc123456， 请求参数None
+Tue, 17 May 2022 12:26:29-log-httpport.py-[line:33]-INFO-[日志信息]: 正在发送post请求，请求地址：http://kbs.matrixdesign.cn/api/authapi/bsProInfo/save， 请求参数None

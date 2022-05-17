@@ -9,7 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-class pyselenium():
+class pyselenium:
+
     def __init__(self, brower):  # 初始化浏览器
         if brower == 'firefox' or brower == 'Firefox' or brower == 'f' or brower == 'F':
             deriver = webdriver.Firefox()
@@ -183,8 +184,3 @@ class pyselenium():
         self.element_wait(fangfa, dingwei)
         if1 = self.element(fangfa, dingwei)
         self.driver._switch_to.frame(if1)
-
-
-if __name__ == '__main__':
-    driver = pyselenium(brower="firefox")
-    driver.open('http://www.baidu.com')

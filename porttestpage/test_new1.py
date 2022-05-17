@@ -23,13 +23,23 @@ class TestRequests(unittest.TestCase):
         print(response1.json())
 
     # 新增硬装投标项目
-    def test_add_new_bid_project(self):
+    def test_add_new_hardbid_project(self):
         response = request('post', url=PortElement.login_url, headers=PortElement.loggin_headers,
                            json=PortElement.login_test_value)
         print(response.status_code)
         print(response.headers['set-cookie'])
-        response1 = request('post', url=PortElement.bid_project_save_port, headers=PortElement.loggin_headers,
-                            json=PortElement.add_bid_project)
+        response1 = request('post', url=PortElement.hardbid_project_save_port, headers=PortElement.loggin_headers,
+                            json=PortElement.add_hardbid_project)
+        print(response1.text)
+
+    # 新增软装投标项目
+    def test_add_new_softbid_project(self):
+        response = request('post', url=PortElement.login_url, headers=PortElement.loggin_headers,
+                           json=PortElement.login_test_value)
+        print(response.status_code)
+        print(response.headers['set-cookie'])
+        response1 = request('post', url=PortElement.softbid_project_save_port, headers=PortElement.loggin_headers,
+                            json=PortElement.add_softbid_project)
         print(response1.text)
 
     # 新增执行项目
