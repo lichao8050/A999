@@ -19,4 +19,4 @@ class TestRequests(unittest.TestCase):
         print(response.headers['set-cookie'])
         response1 = request('post', url=PortElement.action_project_save_port1, headers=None,
                             json=PortElement.action_add_project1)
-        print(response1.json())
+        print(response1.json(1))
