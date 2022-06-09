@@ -12,6 +12,7 @@ from pykeyboard import PyKeyboard
 import win32api
 import win32con
 import os
+import unittest
 
 import log
 from base.base_util import logger
@@ -59,6 +60,7 @@ class BasePage:
 
         except Exception as e:
             logger.error("出现异常", format(e))
+
     # def find_element(self, by, locator, timeout=30):
     #     """ 定位单个元素  :param by: 定位方式 eg:By.ID   :param locator: 定位表达式
     #     :param timeout: 显示等待超时时间    :return: """

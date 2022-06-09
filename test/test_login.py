@@ -20,4 +20,3 @@ class TestLogin(BaseUtil):
 
         login = LoginPage(self.driver)
         login.login_erp(username, password)
-

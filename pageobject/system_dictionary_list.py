@@ -9,6 +9,7 @@ class matrix:
     use_loc = (By.XPATH, "//input[@placeholder='請輸入賬號']")  # 請輸入賬號
     pas_loc = (By.XPATH, "//input[@placeholder='請輸入密碼']")  # 請輸入密碼
 
+    tips = (By.XPATH, "//span[text()='提示']")  # 提示
     use_loc1 = (By.XPATH, "//input[@placeholder='请输入用户名']")  # 請輸入賬號
     pas_loc1 = (By.XPATH, "//input[@placeholder='请输入密码']")  # 請輸入密碼
     sub_loc = (By.XPATH, "//button[@type='button']")  # 点击登录按钮
