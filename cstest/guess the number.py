@@ -25,7 +25,7 @@ while i < 4:
         if int(input_number) < x:
             print('小了，猜大一点的数，你猜的数是：%s,你还有%s次机会' % (input_number, f))
         elif int(input_number) == x:
-            print('恭喜你猜对了!随机生成的数是：%s' % x)
+            print('你太棒了，你用了%s次就猜中了答案!随机生成的数是：%s' % (i, x))
             break
         elif int(input_number) > x:
             print('大了，猜小一点的数，你猜的数是：%s,你还有%s次机会' % (input_number, f))
