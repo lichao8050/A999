@@ -2,8 +2,86 @@
 # @Time     : 2022/4/26 17:04
 # @Author   : Mr_Li
 # @FileName : cs_test.py
+# a = "hello world"
+# b = 'what\'s you name?'
+# '''反斜杠是转义符'''
+# c = "what's you name?"
+# d = 1
+# e = -1
+# f = 0.1
+# print(a)
+# print(b)
+# print(c)
+# print("b的变量类型是：\n", type(b))
+# print("d的变量类型是：", type(d))
+# print("e的变量类型是：", type(e))
+# print("f的变量类型是：", type(f))
+# print(c + str(d))
+# a = 'my nane is %s'
+# print('这是变量a首字母大写：', a.title())
+# print('这是变量a安装空格分段：', a.split(' '))
+# b = a.split(' ')
+# print('这是变量b按照‘.’拼接：', '.'.join(b))
+# print('这是变量b：', b)
+# c = 'tom'
+# a = 'my nane is %(x)s' % {'x': c}
+# print(a)
+# d = 'i like {0} cool {1}'.format(1, 2)
+# print(d)
+# e = '王'
+# print(type(e))
+# a = []
+# print(type(a))
+# print(bool(a))
+# a = [1 , 2, 'css']
+# print(bool(a))
+# print(a[2])
+# b = a[2]
+# print(type(b))
+# print(b.index('s'))
+# print(a)
+# print(a[::-1])
+# a = [34, 'ssd', -3, 'xdsa']
+# a.append("like")
+# a[len(a):] = [23]
+# print(a)
+# print(len(a))
+# a[7:] = ['like']
+# print(a)
+# a[3:] = ['like']
+# print(a)
+# a.insert(5, 'xx')
+# print(a)
+# a.insert(1, 44)
+# print(a)
+# if 'sa' in a:
+#     a.remove('sa')
+#     print('sa存在，被删除')
+# else:
+#     a.insert(0, 'sa')
+#     print('sa不存在,被增加')
+# print(a)
+# b = list(reversed(a))
+# print(b)
+# print(len(b))
+# c = a + b
+# print(c)
 
-
+# print(type(c))
+# print(c * 3)
+# print(len(c))
+# print('sa' in c)
+# i = r"c:\news\app\qqww.jpg"
+# '''r可以让文本原原本本的输出'''
+# z = "c:\\news\\app\qqww.jpg"
+# # print(i)
+# # print(z)
+# # print(help(abs))
+# name = input("输入你的名字：")
+# age = input("输入你的年龄：")
+# print("你叫", name, "你今年", age, "岁了！")
+# print("you name " + name + "you age " + age)
+# print(help(int))
 # def mx_tt(p):
 #     n = len(p)
 #     for a in range(n):
@@ -61,17 +139,11 @@
 # sheet_names = workbook.sheet_names()
 # print(sheet_names)  # 结果：['表1', 'Sheet2']
 #
-# """ 获取所有或某个sheet对象"""
-# # 获取所有的sheet对象
-# sheets_object = workbook.sheets()
-# print(
-#     sheets_object)  # 结果：[<xlrd.sheet.Sheet object at 0x0000000002956710>, <xlrd.sheet.Sheet object at 0x0000000002956AC8>]
-# # 通过index获取第一个sheet对象
-# sheet1_object = workbook.sheet_by_index(0)
-# print(sheet1_object)  # 结果：<xlrd.sheet.Sheet object at 0x0000000002956710>
-# # 通过name获取第一个sheet对象
-# sheet1_object = workbook.sheet_by_name(sheet_name="表1")
-# print(sheet1_object)  # 结果：<xlrd.sheet.Sheet object at 0x0000000002956710>
+# """ 获取所有或某个sheet对象""" # 获取所有的sheet对象 sheets_object = workbook.sheets() print( sheets_object)  # 结果：[
+# <xlrd.sheet.Sheet object at 0x0000000002956710>, <xlrd.sheet.Sheet object at 0x0000000002956AC8>] #
+# 通过index获取第一个sheet对象 sheet1_object = workbook.sheet_by_index(0) print(sheet1_object)  # 结果：<xlrd.sheet.Sheet object
+# at 0x0000000002956710> # 通过name获取第一个sheet对象 sheet1_object = workbook.sheet_by_name(sheet_name="表1") print(
+# sheet1_object)  # 结果：<xlrd.sheet.Sheet object at 0x0000000002956710>
 #
 # """ 判断某个sheet是否已导入"""
 # # 通过index判断sheet1是否导入
@@ -165,8 +237,8 @@
 #
 # 若表格为xls格式的，打开workbook时需将formatting_info设置为True，然后再获取sheet中的合并单元格；若表格有xlsx格式的，打开workbook时保持formatting_info为默认值False，然后再获取sheet中的合并单元格；
 #
-# SheetObject.merged_cells：获取sheet中合并单元格的信息，返回值为列表；若sheet对象中无合并单元格，则返回值为空列表；列表中每个单元格信息的格式为：(row_start, row_end, col_start,
-#                                                                                           col_end)； row_start表示合并单元格的起始行； row_end表示合并单元格的结束行； col_start表示合并单元格的起始列；col_end表示合并单元格的结束列；
+# SheetObject.merged_cells：获取sheet中合并单元格的信息，返回值为列表；若sheet对象中无合并单元格，则返回值为空列表；列表中每个单元格信息的格式为：(row_start, row_end,
+# col_start, col_end)； row_start表示合并单元格的起始行； row_end表示合并单元格的结束行； col_start表示合并单元格的起始列；col_end表示合并单元格的结束列；
 # 合并单元格的行取值范围为[row_start, row_end)，包括row_start，不包括row_end；合并单元格的列取值范围为[col_start, col_end)，包括col_start，不包括col_end；如：(
 # 1, 3, 4, 6)：表示从第1到2行合并，从第4到第5列合并；
 #
@@ -273,7 +345,6 @@
 # # 单元格合并
 # worksheet.write_merge(0, 0, 4, 5, 'First Merge')  # 合并0行的4到5列
 # worksheet.write_merge(1, 2, 4, 5, 'Second Merge')  # 合并1和2行的4到5列
-#
 # # 设置单元格内容的对其方式
 # alignment = xlwt.Alignment()  ## Create Alignment
 # alignment.horz = xlwt.Alignment.HORZ_CENTER
@@ -285,3 +356,98 @@
 # # 保存文件
 # workbook.save('data_test.xls')
 # 2、字体颜色和背景颜色对应索引号字体颜色：font.colour_index背景颜色：pattern.pattern_fore_colour
+
+# a = 'who are you?'
+#
+# print(a.split(' '))
+# b = "i am, writing\npython\tbook fu onlin"
+# print(b)
+# print(b.split())
+# c = "*".join(b.split())
+# print(c)
+# d = {"aa": "bb", "cc": "dd"}
+# print(id(d))
+# d["ee"] = "ff"
+# print(d)
+# print(id(d))
+# e = (["1",'css'],["2","jss"])
+# f = dict(e)
+# print(f)
+# print(f["1"])
+# print(f["2"])
+# print(f(1))
+# a = int(input("请输入一个数字："))
+# if a < 10:
+#     print("您输入的数字是：%d" % a)
+#     print("%d小于10" % a)
+# elif a == 10:
+#     print("您输入的数字是：%d" % a)
+#     print("%d等于10" % a)
+# else:
+#     print("您输入的数字是：%d" % a)
+#     print("%d大于10" % a)
+# for i in range(1, 100):
+#     print(i, end=' ')
+# a = 'hello world'
+# for i in range(len(a)):
+#     print(a[i])
+#     print(a[i],"i的值是：%d" % i)
+
+# for i in range(1, 100):
+#     if i % 3 == 0:
+#         print(i)
+# for a in range(3, 100, 3):
+#     print(a, end=' ')
+# a = 'hello world'
+# for i in a:
+#     print(i)
+# a = {"businessId": "1526413401402773505", "commercialRate": 40, "competeName": "测试6", "competeProject": "测试4",
+#      "cooperationRecord": "这是测试合作记录1", "createBy": "15933960308972735"}
+# for k, v in a.items():
+#     print(k, v)
+# for b in a:
+#     print(b, end='')
+# for c in a.values():
+#     print(c, '\n')
+#
+# a = []
+# for i in range(1, 100):
+#     if i <= 10:
+#         a.append(i)
+# print(a)
+# print(type(a))
+# x = [1, 2, 3, 4, 5]
+# y = [9, 8, 7, 6, 5]
+# c = []
+# for i in range(2):
+#     c.append(x[i] + y[i])
+# print(c)
+# a = ['hello', 'how', 'are', 'you']
+# b = ['world', 'xx', 'fuc']
+# c = list(enumerate(a))
+# print(c)
+# 猜数字
+# import random  # 引入python中的random随机模块
+#
+# xnum = random.randint(0, 9)  # random.randint(a,b)此函数是用于生成随机整数N,位于a <= N <= b
+# i = 0  # 定义循环次数i 且i=0
+# while i < 4:  # 设置循环次数小于4
+#     print(100 * '*')   # 打印100个星号
+#     num = input('请您输入0到9之间的任意一个数：')  # 定义输入数字
+#     if not num.isdigit():  # 首先判断输入的字符是不是纯数字： 函数str.isdigit() 是用于判断是否为纯数字
+#         y = 3 - i
+#         print("请您输入一个数字,你当前输入的是：%s,您还有%s次机会!" % (num, y))
+#     elif int(num) < 0 or int(num) > 9:
+#         y = 3 - i
+#         print("请输入0到9之间的一个数字，你当前输入的是：%s,您还有%s次机会!" % (num, y))
+#     else:
+#         x = 3 - i
+#         if int(num) == xnum:
+#             print('运气真好，您猜对了!随机生成的数字是：%s' % xnum)
+#             break  # break的含义就是要在这个地方中断循环，跳出循环体,表示直接结束该循环 continue 表示从当前位置跳转到循环第一行
+#         elif int(num) > xnum:
+#             print('您猜大了，可以猜小一点的数，您还有%s次机会!' % x)
+#         elif int(num) < xnum:
+#             print('您猜小了，可以猜大一点的数，您还有%s次机会!' % x)
+#     i += 1
+
