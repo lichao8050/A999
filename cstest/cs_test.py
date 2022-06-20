@@ -450,4 +450,71 @@
 #         elif int(num) < xnum:
 #             print('您猜小了，可以猜大一点的数，您还有%s次机会!' % x)
 #     i += 1
+# while ...else
+# a = 0
+# while a <= 5:
+#     print(a)
+#     a += 1
+# else:
+#     print('while循环结束，该我了')
+# sprt函数是开平方根 必须通过math模块导入
+# from math import sqrt
+#
+# for n in range(1, 10):
+#     root = sqrt(n)
+#     print(root)
+#     if root == int(root):
+#         print(n)
+#         break
+#     else:
+#         print("Nothing.")
+#
+# f = open("cscss.txt", 'a', encoding="utf-8")
+# f.write("你好吗，你好啊")
+# f.close()
+# f = open("cscss.txt", 'r', encoding="utf-8")
+# for line in f:
+#     print(line)
+#
+# with open("123cs.txt", 'w', encoding='utf-8') as f:
+#     f.write("你好你好哈哈哈哈！")
+# with open('123cs.txt', 'r', encoding='utf-8') as f:
+#     # 读取内容方法一：用for循环 line每句读取并打印
+#     for line in f:
+#         print(line)
+# with open('123cs.txt', 'r', encoding='utf-8') as f:
+#     # 方法二 直接使用read函数
+#     print(f.read())
 
+# import os
+# f_start = os.stat('123cs.txt')
+# print(f_start,)
+#
+# import time
+#
+# ff_start = os.stat('123cs.txt')
+# p = time.localtime(ff_start.st_ctime)
+# print(p)
+# f = list(open('123cs.txt'))
+# print(f)
+# f = tuple(open('123cs.txt'))
+# print(f)
+# a, b, c, d = open('123cs.txt')
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# f = list(open('123cs.txt'))
+# print(f)
+# f_iter = iter(f)
+# print(f_iter.next())
+# f = list(open("123cs.txt"))
+# ff = iter(f)
+# while True:
+#     print(ff.__next__())
+a = {"a": "1", "b": "2", "c": "3"}
+a['d'] = '4'
+print(a)
+# for i in a:
+#     if i == "c":
+#         print(a[i])
