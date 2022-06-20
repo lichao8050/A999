@@ -1422,3 +1422,6 @@ Wed, 08 Jun 2022 17:31:29-log-base_util.py-[line:25]-INFO-[日志信息]: 打开
 Wed, 08 Jun 2022 17:31:29-log-login_page.py-[line:15]-INFO-[日志信息]: 输入用户名
 Wed, 08 Jun 2022 17:31:30-log-login_page.py-[line:17]-INFO-[日志信息]: 输入登录密码
 Wed, 08 Jun 2022 17:31:30-log-login_page.py-[line:19]-INFO-[日志信息]: 点击登录按钮
+Thu, 09 Jun 2022 17:32:42-log-base_util.py-[line:11]-INFO-[日志信息]: --------------------------------------------------
+Thu, 09 Jun 2022 17:32:42-log-base_util.py-[line:12]-INFO-[日志信息]: ---开始执行测试---
+Thu, 09 Jun 2022 17:32:42-log-base_util.py-[line:18]-INFO-[日志信息]: 全局浏览器
