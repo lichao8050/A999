@@ -327,10 +327,9 @@
 # style.borders = borders  # Add Borders to Style
 # worksheet.write(4, 0, 'border2', style)
 #
-# # 输入一个日期到单元格
-# style = xlwt.XFStyle()
-# style.num_format_str = 'M/D/YY'  # Other options: D-MMM-YY, D-MMM, MMM-YY, h:mm, h:mm:ss, h:mm, h:mm:ss, M/D/YY h:mm, mm:ss, [h]:mm:ss, mm:ss.0
-# worksheet.write(5, 0, datetime.datetime.now(), style)
+# # 输入一个日期到单元格 style = xlwt.XFStyle() style.num_format_str = 'M/D/YY'  # Other options: D-MMM-YY, D-MMM, MMM-YY,
+# h:mm, h:mm:ss, h:mm, h:mm:ss, M/D/YY h:mm, mm:ss, [h]:mm:ss, mm:ss.0 worksheet.write(5, 0, datetime.datetime.now(),
+# style)
 #
 # # 单元格添加计算公式
 # worksheet.write(0, 1, 2)  # Outputs 2
@@ -512,9 +511,71 @@
 # ff = iter(f)
 # while True:
 #     print(ff.__next__())
-a = {"a": "1", "b": "2", "c": "3"}
-a['d'] = '4'
-print(a)
+# a = {"a": "1", "b": "2", "c": "3", 'd': '5'}
+# print(a)
 # for i in a:
-#     if i == "c":
+#     if i == "d":
 #         print(a[i])
+# a = (['a', 'b'], ['c', 'd'], ['e', 'f'])
+# b = dict(a)
+# print(b)
+# f = open("123cs.txt")
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# print(f.readline())
+# f.seek(3)  # seek(3)函数表示将指针移动到当前文本第3个字符后面
+# print(f.readline())
+# lis = 'hello world'
+#
+# liststt = list(lis)
+# # print(list(lis))
+# # for i in liststt:
+# #     print(i)
+# f = iter(liststt)
+# while True:
+#     print(f.__next__())
+# dict1 = {'a': '1'}
+# dict1['b'] = 2
+# dict1['c'] = 4
+# dict1['d'] = 2
+# f = iter(dict1)
+# while True:
+#     print(f.__next__())
+
+
+def my_append(x, y):
+    print("x=", x, end=' ')
+    print("y=", y)
+    return x + y
+
+
+print("x加y等于：", my_append(2, 3))
+print("x加y等于：", my_append(10, 31))
+
+
+def my_minus(x, y):
+    print("x=", x, end=' ')
+    print("y=", y)
+    return x - y
+
+
+print("x减y等于：", my_minus(2, 3))
+
+
+def my_ride(x, y):
+    print("x=", x, end=' ')
+    print("y=", y)
+    return x * y
+
+
+print("x乘以y等于：", my_ride(2, 3))
+
+
+def my_divide(x, y):
+    print("x=", x, end=' ')
+    print("y=", y)
+    return x / y
+
+
+print("x除以y等于：", my_divide(2, 3))
