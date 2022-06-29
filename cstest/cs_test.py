@@ -542,40 +542,201 @@
 # f = iter(dict1)
 # while True:
 #     print(f.__next__())
+#
+#
+# def my_append(x, y):
+#     print("x=", x, end=' ')
+#     print("y=", y)
+#     return x + y
+#
+#
+# print("x加y等于：", my_append(2, 3))
+# print("x加y等于：", my_append(10, 31))
+#
+#
+# def my_minus(x, y):
+#     print("x=", x, end=' ')
+#     print("y=", y)
+#     return x - y
+#
+#
+# print("x减y等于：", my_minus(2, 3))
+#
+#
+# def my_ride(x, y):
+#     print("x=", x, end=' ')
+#     print("y=", y)
+#     return x * y
+#
+#
+# print("x乘以y等于：", my_ride(2, 3))
+#
+#
+# def my_divide(x, y):
+#     print("x=", x, end=' ')
+#     print("y=", y)
+#     return x / y
+#
+#
+# print("x除以y等于：", my_divide(2, 3))
+# lis = ["I", "am", "a", "pythoner", "I", "am", "learning", "it", "with"]
+# lisb = []
+# for i in range(len(lis)):
+#     lisb.append(i)
+# print(lisb)
+# lisx = []
+# for i in range(1, 100):
+#     if i % 4 == 0:
+#         lisx.append(i)
+# print(lisx)
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# print(zip(a,b))
+# lisdd = []
+# for i in range(1, 10):
+#     x = i*i
+#     lisdd.append(x)
+# print(lisdd)
 
 
-def my_append(x, y):
-    print("x=", x, end=' ')
-    print("y=", y)
-    return x + y
+# def f_add(x, *arg):
+#     print(x)
+#     rex = x
+#     print(arg)
+#     for i in arg:
+#         # rex += i
+#         rex = rex + i
+#         print(i)
+#     return rex
+#
+#
+# print(f_add(1, 2, 3, 4, 5, 6, 7, 8, 9))
+# def fp(x, *args):
+#     print('x:', x)
+#     print('arg:', args)
+# fp(7)
+# def fx(**kwargs):
+#     print(kwargs)
+#
+#
+# fx(a=1, b=2, c='xx')
+# 打印53种类型的传值
+# def foold(x, y, z, *args, **kwargs):
+#     print(x)
+#     print(y)
+#     print(z)
+#     print(args)
+#     print(kwargs)
+#
+#
+# foold(1, 2, 3, 4, 5, name="qiwsir")
+# class Person:
+#     def eye(self):
+#         print('two eyes')
+#
+#     def breast(self, n):
+#         print("the breast is :", n)
+#
+#
+# class Gril:
+#     age = 18
+#     hight = 110
+#
+#     def color(self):
+#         print('the gril is white')
+#
+#
+# class HotGril(Person, Gril):
+#     pass
+#
+#
+# if __name__ == '__main__':
+#     a = HotGril()
+#     a.eye()
+#     a.breast(15)
+#     a.color()
+#     print(a.age)
+#     print(a.hight)
 
+# #
+# __metaclass__ = type
+#
+#
+# class Person:
+#     def __init__(self):
+#         self.height = 160
+#
+#     def about(self, name):
+#         print("{} is about {}".format(name, self.height))
+#
+#
+# class Girl(Person):
+#     def __init__(self):
+#         super(Girl, self).__init__()
+#         self.breast = 90
+#
+#         def about(self, name):
+#             print("{} is a hot girl, she is about {}, and her breast is {}".format(name, self.height, self.breast))
+#             super(Girl, self).about(name)
+#
+#
+# if __name__ == "__main__":
+#     cang = Girl()
+#     cang.about("canglaoshi")
+#
+# class StaticMethod:
+#     @staticmethod
+#     def s_foo():
+#         print('the is my name s_foo().')
+#
+#
+# class ClassMethod:
+#     @classmethod
+#     def bar(cls):
+#         print("This is class method bar().")
+#         print("bar() is part of class:", cls.__name__)
+#
+# if __name__ == "__main__":
+#     static_foo = StaticMethod() #实例化 static_foo.foo()
+#     #实例调用静态方法
+#     StaticMethod.s_foo() #通过类来调用静态方法
+#     print("********" )
+#     class_bar = ClassMethod()
+#     class_bar.bar()
+#     ClassMethod.bar()
+# lis = []
+# for i in range(11):
+#     lis.append(i*i)
+#     print(i)
+# print(lis)
+# print(sum(lis))
 
-print("x加y等于：", my_append(2, 3))
-print("x加y等于：", my_append(10, 31))
+#
+# a = sum(i for i in range(50))
+#
+# print(a)
+#
+# def r_return(n):
+#     print('you take me')
+#     while n > 0:
+#         print('before return')
+#         return n
+#         n -= 1
+#         print('after return')
+#
+#
+# rr = r_return(5)
 
+#
+# def tt_return(x):
+#     print('i fuc you')
+#     while x > 0:
+#         print('1 while')
+#         yield x
+#         x -= 1
+#         print('while i')
+#
+#
+# tt = tt_return(8)
+# tt.__next__()
 
-def my_minus(x, y):
-    print("x=", x, end=' ')
-    print("y=", y)
-    return x - y
-
-
-print("x减y等于：", my_minus(2, 3))
-
-
-def my_ride(x, y):
-    print("x=", x, end=' ')
-    print("y=", y)
-    return x * y
-
-
-print("x乘以y等于：", my_ride(2, 3))
-
-
-def my_divide(x, y):
-    print("x=", x, end=' ')
-    print("y=", y)
-    return x / y
-
-
-print("x除以y等于：", my_divide(2, 3))
