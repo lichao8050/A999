@@ -739,4 +739,298 @@
 #
 # tt = tt_return(8)
 # tt.__next__()
+"""import random
 
+s = random.randint(0, 9)
+print(s)
+i = 1
+while i < 4:
+    a = input('输入一个字：')
+    if not a.isdigit():  # .isdigit()是用于判断是否是纯数字
+        print("您的输入不合法！您当前输入的是%s" % a)
+        continue
+    elif int(a) < 1 or int(a) > 10:
+        print("请输入介于1到10之间的数!您当前输入的是%s" % a)
+        continue
+    else:
+        x = 3 - i
+        if int(a) > s:
+            print("随机数是%s，你输入的是%s，你还有%s次机会" % (s, a, x))
+        elif int(a) == s:
+            print("你猜中了随机数，真了不起！")
+            break
+        elif int(a) < s:
+            print("随机数是%s，你输入的是%s，你还有%s次机会" % (s, a, x))
+    i += 1
+"""
+"""a = 123.22222
+print('%s' % a)  # %s 是字符串占位符
+print('%d' % a)  # %d 是整数占位符
+print('%.2f' % a)  # %.nf 是小数占位符，保留几位小数用 .n表示"""
+# b = []
+# c = ()
+# d = {}
+# e = {1, 2, '2sds'}
+# print(type(b), type(c), type(d), type(e))
+#
+# b.append('aa')
+# print(b, c , d, e)
+"""
+print("打印99乘法表")
+for i in range(1, 10):
+    # print("%d * %d=" % (i, i), i*i , end='  ')
+    # print(i)
+    for x in range(1, i + 1):
+        # print(x)
+        print("%dX%d=%d\t" % (i, x, i * x), end="")
+    print("")
+print(100*"*")
+for x in range(9, 0, -1):
+    for y in range(1, x + 1):
+        # print(y)
+        print("%dX%d=%d\t" % (x, y, y * x), end="")
+    print("")
+print(100*"*")
+a = []
+for i in range(1, 51):
+    a.append(i)
+print(a[10])
+print(sum(a))"""
+"""lis = ['a', 'a1', 1, '23', 'ssa', 1]
+
+print("打印当前列表：", lis)
+# list.reverse() 函数用于反转列表顺序
+lis.reverse()
+print("打印反转顺序后的列表：", lis)
+#  list.sort() 函数只能用于相同元素类型的列表排序
+# lis.sort()
+# print(lis)
+lis_b = []
+for i in lis:
+    print(i, end='\t')
+    print(50*"*"+'这是分割线'+50*"*")
+
+    if i == 1:
+        lis_b.append(i)
+        print("这是B", lis_b)
+    else:
+        pass
+print(lis_b)
+print(lis)
+删除列表元素的几种方法：1、del list[n] 根据索引删除 2、list.remove(key) 根据值删除  3、list.pop(n)根据索引删除
+    len(list) 函数用于统计列表长度   list.insert(index,key):将某个值插入该列表位于索引index位置
+# lis.remove(1)
+# print(lis)
+# lis.pop(0)
+# print(lis)
+a = len(lis)
+print(a)
+lis_c = []
+for x in range(1, 51):
+    lis_c.append(x)
+
+print(lis_c)
+lis_d = lis_c[0:50:2]
+print(lis_d)
+print(sum(lis_d))
+lis_d.insert(1, 10)
+print(lis_d)
+b = tuple(lis_d)
+print(tuple(b))
+c = list(b)
+print(c)
+print(type(b))
+print(type(c))
+e = dict(a=1, b='aa', c=2)
+print(e)
+for key in e.keys():
+    print(key, e[key])"""
+# f = open('123cs.txt', 'r')
+# for i in f:
+#     print(i)
+# 引入 OS模块
+# import os
+# # os.rename('原文件名', '新文件名') 修改文件名
+# """os.rename('CS123', 'CS123.txt')
+# # os.remove('文件名')  删除文件
+# os.remove('CS123.txt')"""
+# f = os.getcwd()
+# d = os.path
+# print(f)
+
+"""report = ['u', 'b', '1', 't', 's', '0', '3', '9', 'k', 'b',
+          '4', 'n', ' ', '7', 'b', 'f', 'h', 'r', '3', '6',
+          's', 'v', 'f', ' ', '-', 'z', 'e', 'b', '8', '5',
+          'ə', 'j', 'u', '2', 'o', 'l', '8', 'b', 'i', 'q',
+          'b', '7', '9', 'b', 'm', 'i', 's', '3', 'i', '8',
+          '$', 'u', '0', 't', '9', ';', 'q', 'w', ' ', '!']
+lis = []
+for i in range(len(report)):
+    if i == 12 or i == 13:
+        lis.append(report[i])
+print(lis)
+lis.append('5')
+lis.append('ə')
+lis.append('7')
+lis.append(' ')
+lis.append('!')
+lis.insert(3, 'ʌo')
+print(lis)
+print(''.join(lis))"""
+
+# lis = []
+# for i in range(len(report)):
+#     # print(i, report[i])
+#     if i == 12 or i == 13:
+#         lis.append(report[i])
+#     else:
+#         pass
+# print(lis)
+# co = report.count('b')
+# print(co)
+# print(len(report))
+# print(report[29])
+# for i in range(len(report)):
+#     print(report[i], i)
+
+# for i in range(1, 10):
+#     for x in range(1, i + 1):
+#         print("%s*%s=%d\t" % (i, x, i * x), end='\t')
+#     print('')
+# from random import randint
+#
+# n = 1
+# while n < 4:
+#     i = randint(1, 10)
+#     if i < 5:
+#         print('随机的是小于5的数,生成的数是：%d' % i)
+#     elif i > 5:
+#         print('随机的是大于5的数,生成的数是：%d' % i)
+#     elif i == 5:
+#         print('随机数等于5')
+#     else:
+#         pass
+#     n += 1
+# print("随机生成3次完毕！")
+
+# L = ['Bart', 'Lisa', 'Adam']
+# for x in L:
+#     print("hello, %s!" % x)
+# n1 = 17
+# n2 = 1000
+# x = hex(n1)
+# # hex()函数是转换16进制的函数
+# x1 = hex(n2)
+# print(x)
+# print(x1)
+#
+#
+# def class_one(i):
+#     return i * i
+#
+#
+# print(class_one(5))
+
+
+# def power(x, n):
+#     s = 1
+#     while n > 0:
+#         n = n - 1
+#         s = s * x
+#     return s
+# print(power(2, 64))
+#
+# sum = 0
+# for i in range(1, 101):
+#     sum = sum + i
+# print(sum)
+# dict_1 = []
+# print(type(dict_1))
+# L = 'Michael'
+# L1 = ' Michael'
+# L2 = 'Michael '
+# L3 = ' Michael '
+# for i in range(len(L)):
+#     if i < 3:
+#         print(L[i])
+# def trim(s):
+#     if s[:1] == ' ':
+#         return s[1:]
+#     elif s[-1:] == ' ':
+#         return s[:-1]
+#     else:
+#         return s
+# print(trim(L))
+# print(trim(L1))
+# print(trim(L2))
+# print(trim(L3))
+'''L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = []
+for x in range(len(L1)):
+    if x == 2 and x == 4:
+        pass
+    else:
+        L2.append(L1[x])
+print(L2)
+if L2 == ['Hello', 'World', 18, 'Apple', None]:
+    print('测试通过!')
+else:
+    print('测试失败!')'''
+
+#
+# def add_1(a, b):
+#     return a + b
+#
+#
+# def remove_1(a, b):
+#     return a - b
+#
+#
+# def ride_1(a, b):
+#     return a * b
+#
+#
+# def divide_1(a, b):
+#     return a / b
+#
+#
+# a = add_1(11, 21)
+# b = remove_1(11, 21)
+# c = ride_1(11, 21)
+# d = ride_1(11, 21)
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+#
+# def expty_1(x):
+#     return x * x
+#
+#
+# e = expty_1(88)
+# print(e)
+
+
+def expty_2(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+
+f = expty_2(2, 10)
+print(f)
+
+
+def xxfl_1(x, n):
+
+    sum = 0
+    for n in range(1, n-1):
+        sum += x * x
+    return sum
+
+
+g = expty_2(2, 63)
+print(g)

@@ -7,7 +7,7 @@
 class PortElement:
     gw_port = r'http://39.108.184.75:9073/timeline?versionFlag=-1'
     # 登录接口
-    login_url = r'http://kbs.matrixdesign.cn/api/pmtapi/base_Account/login?username=wuyue&password=abc123456'
+    login_url = r'http://kbs.matrixdesign.cn/api/pmtapi/base_Account/login?username=heqiangming&password=abc123456'
     loggin_headers = {"Content-Type": "application/json;charset=UTF-8"}
     # 测试数据
     login_test_value = '{"Content-Type": "application/json;charset=UTF-8"}'
@@ -135,7 +135,7 @@ class PortElement:
                 "index": 0
             }
         ],
-        "proName": "软装执行项目测试中2022042103",
+        "proName": "软装执行项目测试2022072702",
         "bsType": "1280327578854494209",
         "proType": "1284015946851291137",
         "customerId": "1331086994964615170",

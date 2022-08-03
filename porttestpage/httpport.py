@@ -12,7 +12,7 @@ class HttpRequests():
     def __init__(self):
         self.session = requests.session()
 
-    def send_request(self, method, url, headers, params_type='form', data=None, **kwargs):
+    def send_request(self, method, url, headers, params_type=None, data=None, **kwargs):
 
         method = method.upper()
         params_type = params_type.upper()
@@ -30,11 +30,11 @@ class HttpRequests():
         elif 'POST' == method:
 
             if params_type == 'FORM':  # 发送表单数据，使用data传递参数
-                logger.info("正在发送post请求，请求地址：{}， 请求参数{}".format(url, data))
+                logger.info("正在发送post请求，数据格式是form，请求地址：{}， 请求参数{}".format(url, data))
                 response = self.session.request(method=method, url=url, headers=headers, data=data, **kwargs)
 
             elif params_type == 'JSON':  # 使用JSON传递参数
-                logger.info("正在发送post请求，请求地址：{}， 请求参数{}".format(url, json))
+                logger.info("正在发送post请求，数据格式是JSON，请求地址：{}， 请求参数{}".format(url, json))
                 response = self.session.request(method=method, url=url, headers=headers, json=data, **kwargs)
 
             else:

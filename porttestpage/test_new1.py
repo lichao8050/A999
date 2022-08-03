@@ -15,6 +15,7 @@ class TestRequests(unittest.TestCase):
         response = request('post', url=PortElement.login_url, headers=PortElement.loggin_headers,
                            json=PortElement.login_test_value)
         print(response.status_code)
+        print(response.headers['set-cookie'])
         li = response.json()
         s = jsonpath(li, '$..id')
         print(s)
