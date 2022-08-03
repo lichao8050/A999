@@ -1022,15 +1022,3 @@ def expty_2(x, n):
 
 f = expty_2(2, 10)
 print(f)
-
-
-def xxfl_1(x, n):
-
-    sum = 0
-    for n in range(1, n-1):
-        sum += x * x
-    return sum
-
-
-g = expty_2(2, 63)
-print(g)
