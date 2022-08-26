@@ -135,7 +135,7 @@ class PortElement:
                 "index": 0
             }
         ],
-        "proName": "软装执行项目测试2022072702",
+        "proName": "20220826财务开票测试项目6",
         "bsType": "1280327578854494209",
         "proType": "1284015946851291137",
         "customerId": "1331086994964615170",
@@ -165,7 +165,7 @@ class PortElement:
         "isEstate": 1,
         "isWarrantyPeriod": "no",
         "createBy": "伍月",
-        "createDate": "2022-04-21 11:13:02",
+        "createDate": "2022-08-26 11:13:02",
         "proRegister": "15583162931904359",
         "proRegisterTime": "2022-04-21 11:13:03",
         "isMineHard": "1326127662460178433",
@@ -177,7 +177,8 @@ class PortElement:
         "isPleasedHard": "yes",
         "planFinishDate": "2022-04-21 11:22:53",
         "proStartDate": "2022-04-21 11:22:58",
-        "expectContractSignTime": "2022-04-21 11:23:01",
+        "expectContractSignTime": "2022-08-31 11:23:01",
+        # expectContractSignTime ：预计签订时间
         "bsProgress": "1326161122331594754",
         "proStatus": "直委项目",
         "bsProFollowRecordList": [
